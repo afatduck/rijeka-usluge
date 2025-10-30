@@ -1,0 +1,35 @@
+.popup_bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: #0008;
+    overflow: auto;
+}
+
+.popup_bg.popup_fullscreen {
+    background-color: var(--bg-color);
+}
+
+.popup_inner {
+    max-width: var(--max-text-width);
+    position: relative;
+    background-color: var(--bg-color);
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.popup_inner i {
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    display: block;
+    width: 1rem;
+    margin-left: auto;
+    position: absolute;
+}

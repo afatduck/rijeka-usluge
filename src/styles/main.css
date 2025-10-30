@@ -1,15 +1,30 @@
+:root {
+    --max-text-width: 80ch;
+    --bg-color: #fafafa;
+}
+
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: #fafafa;
+  background: var(--bg-color);
   color: #333;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 2rem;
+  padding: 0;
+
 }
 
 #app {
   width: 100%;
   max-width: 800px;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+
 }

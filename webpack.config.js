@@ -1,6 +1,8 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
+const { server } = require('typescript');
+const { type } = require('os');
 
 module.exports = {
   entry: './src/index.ts',
@@ -11,6 +13,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
+    alias: {
+      "~": path.resolve(__dirname, "src"),
+    },
   },
   module: {
     rules: [
@@ -28,5 +33,13 @@ module.exports = {
     static: './public',
     port: 3000,
     hot: true,
+    allowedHosts: 'all',
+    server: {
+      type: "https",
+      options: {
+        key: "cert.key",
+        cert: "cert.crt"
+      }
+    }
   },
 };
