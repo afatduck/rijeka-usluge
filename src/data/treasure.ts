@@ -3,22 +3,24 @@ export const treasures: Treasure[] = [
     id: 1,
     title: "Treasure Start",
     description: "This is where your adventure begins!",
-    url: "",
+    url: "https://rijeka.hr",
     hint: "Look for the big statue in the city center.",
     next: [2, 5, 8],
-    location: { lat: 45.3271, lng: 14.4422 }, // Rijeka center
-    category: Category.START,
+    location: { lat: 45.328191, lng: 14.441364 }, // Rijeka center
+    category: "START",
+    badge: "TEST"
   },
   // Branch 1
   {
     id: 2,
     title: "Education Treasure 1",
     description: "Near a famous university building.",
-    url: "",
+    url: "https://rijeka.hr",
     hint: "Find the building with the big clock tower.",
     next: [3],
     location: { lat: 45.3333, lng: 14.4500 },
-    category: Category.EDUCATION,
+    category: "EDUCATION",
+    badge: "TEST"
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ export const treasures: Treasure[] = [
     hint: "Near the entrance gate of the park.",
     next: [4],
     location: { lat: 45.3400, lng: 14.4550 },
-    category: Category.FUN,
+    category: "FUN",
+    badge: "TEST"
   },
   {
     id: 4,
@@ -38,7 +41,8 @@ export const treasures: Treasure[] = [
     hint: "Near the playground in the neighborhood.",
     next: [],
     location: { lat: 45.3450, lng: 14.4600 },
-    category: Category.HOUSING,
+    category: "HOUSING",
+    badge: "TEST"
   },
   // Branch 2
   {
@@ -49,7 +53,8 @@ export const treasures: Treasure[] = [
     hint: "Look for the library with glass facade.",
     next: [6],
     location: { lat: 45.3300, lng: 14.4350 },
-    category: Category.EDUCATION,
+    category: "EDUCATION",
+    badge: "TEST"
   },
   {
     id: 6,
@@ -59,7 +64,8 @@ export const treasures: Treasure[] = [
     hint: "Check near the water fountain in the city park.",
     next: [7],
     location: { lat: 45.3250, lng: 14.4300 },
-    category: Category.FUN,
+    category: "FUN",
+    badge: "TEST"
   },
   {
     id: 7,
@@ -69,7 +75,8 @@ export const treasures: Treasure[] = [
     hint: "Look near the corner house with red roof.",
     next: [],
     location: { lat: 45.3200, lng: 14.4250 },
-    category: Category.HOUSING,
+    category: "HOUSING",
+    badge: "TEST"
   },
   // Branch 3
   {
@@ -80,7 +87,8 @@ export const treasures: Treasure[] = [
     hint: "Find the museum with the flag out front.",
     next: [9],
     location: { lat: 45.3305, lng: 14.4400 },
-    category: Category.EDUCATION,
+    category: "EDUCATION",
+    badge: "TEST"
   },
   {
     id: 9,
@@ -90,7 +98,8 @@ export const treasures: Treasure[] = [
     hint: "Check around the swings and slides.",
     next: [10],
     location: { lat: 45.3350, lng: 14.4450 },
-    category: Category.FUN,
+    category: "FUN",
+    badge: "TEST"
   },
   {
     id: 10,
@@ -100,6 +109,7 @@ export const treasures: Treasure[] = [
     hint: "Near the corner house with a garden.",
     next: [],
     location: { lat: 45.3380, lng: 14.4500 },
-    category: Category.HOUSING,
+    category: "HOUSING",
+    badge: "TEST"
   },
 ];

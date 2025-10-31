@@ -3,16 +3,32 @@ interface FactoryProps {
     close?: () => void 
 }
 
-type Factory = (props: FactoryProps) => void
+type Factory<T = {}> = (props: FactoryProps & T) => void
+
+interface TreasureFactoryProps {
+    treasure: Treasure
+}
 
 type CancelationToken = string
 
-enum Category {
-    START,
-    EDUCATION,
-    FUN,
-    HOUSING
-}
+type Category = "START" | "EDUCATION" | "FUN" | "HOUSING"
+
+type Asset = "QUESTION_MARK" | 
+"TEST" | 
+"SOKOL" |
+"BESPLATNI" |
+"DOMMLADIH" |
+"EDUKATIVNI" |
+"FESTIVALNI" |
+"KARJERNI" |
+"KNJIZNICA" |
+"KULTURNI" |
+"PORTAL" |
+"SAVJET" |
+"STANBENI" |
+"START" |
+"SUFINANCIRANI" |
+"ZASTITA";
 
 interface Treasure {
     id: number
@@ -22,9 +38,15 @@ interface Treasure {
     hint: string
     next: int[]
     location: google.maps.LatLngLiteral
-    category: Category
+    category: Category,
+    badge: Asset
 }
 
+type TreasureState = 
+    "HIDDEN" |
+    "LOCKED" |
+    "UNLOCKED"
+
 interface TreasureSaveData {
-    [key: Caregoy]: number
+    [key: number]: TreasureState
 }

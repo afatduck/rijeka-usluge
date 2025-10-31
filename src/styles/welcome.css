@@ -1,0 +1,71 @@
+.welcome h1 span:nth-child(2) {
+    margin-left: 2rem;
+    display: inline-block;
+    aspect-ratio: 1;
+    position: absolute;
+    width: 64px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-20px);
+    background-image: url('../../public/assets/icon/sigul.png');
+}
+
+.welcome h1 span:nth-child(1) {
+    color: #f4c434;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+@media (min-width: 750px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .welcome h1 span:nth-child(2) {
+        width: 164px;
+        transform: translateY(-80px);
+    }
+}
+
+.ura {
+    position: absolute;
+    width: 200px;
+    bottom: -4px;
+    display: none;
+    left: 8vw;
+}
+
+@media (min-width: 1500px) {
+    .ura {
+        display: block;
+    }
+}
+
+.welcome h1 span:nth-child(3) {
+    color: #2a9fca;
+    padding-left: 4rem;
+    display: block;
+}
+
+.warning {
+    font-weight: bold;
+    padding: 1rem 2rem;
+    margin: 2rem 0rem;
+    background-color: #f4c43455;
+    border-radius: 4px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: 100%;
+    justify-content: center;
+}
+
+.welcome button {
+    margin-left: auto;
+}

@@ -11,7 +11,7 @@ export const createPopup = (contentFactory: Factory, fullscreen: boolean = false
 
     if (showCloseButton) {
         const closeButton = document.createElement('i')
-        closeButton.textContent = 'X';
+        closeButton.classList.add("close_icon")
         closeButton.addEventListener('click', () => close())
         inner.append(closeButton)
     }

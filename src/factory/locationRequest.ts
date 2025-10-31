@@ -9,9 +9,9 @@ Za korištenje ove aplikacije potrebno je omogućiti koriištenje lokcaije. Pobi
 export const LOCATION_REQUEST_POPUP_ID = "location_popup" 
 
 const buildLocationRequest: Factory = ({root, close}) => {
-    const h1 = document.createElement('h1');
-    h1.textContent = TITLE
-    root.append(h1);
+    const h2 = document.createElement('h2');
+    h2.textContent = TITLE
+    root.append(h2);
 
     const p = document.createElement('p')
     p.textContent = MESSAGE
