@@ -35,6 +35,7 @@ body {
 }
 
 button {
+  --col: #f4c434;
   padding: .5rem 1.25rem;
   font-size: large;
   font-weight: lighter;
@@ -46,7 +47,7 @@ button {
   position: relative;
   overflow: visible;
   z-index: 1;
-  box-shadow: #f4c434 6px 6px 0px 0px;
+  box-shadow: var(--col) 5px 5px 0px 0px;
   transition: all .15s ease-in-out;
 }
 
@@ -54,10 +55,10 @@ button::before {
   content: "";
   position: absolute;
   inset: 0;
-  left: 6px;
-  top: 6px;
+  left: 5px;
+  top: 5px;
   border-radius: 3px;
-  background-color: #f4c434;
+  background-color: var(--col);
   z-index: -1;
   cursor: pointer;
   transition: all .15s ease-in-out;
@@ -80,4 +81,14 @@ h2 {
 
 p {
   text-align: justify;
+}
+
+.player {
+  background-color: #f4c434;
+  padding: 6px;
+  border: #333 1px solid;
+}
+
+.flip {
+  transform: scaleX(-1);
 }

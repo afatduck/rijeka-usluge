@@ -7,7 +7,7 @@ import AssetService from "./assetService";
 const DETECTION_RADIUS = 25;
 const DEFAULT_LOCATION = { lat: 45.328206, lng: 14.447200 };
 const MOVE_SPEED = 1.5e-4
-const PLAYER_SIZE = 54
+const PLAYER_SIZE = 40
 
 class LocationService {
 
@@ -48,10 +48,12 @@ class LocationService {
                 }
                 case "ArrowLeft": {
                     this.location.lng -= MOVE_SPEED
+                    this.marker?.classList.add('flip')
                     break
                 }
                 case "ArrowRight": {
                     this.location.lng += MOVE_SPEED
+                    this.marker?.classList.remove('flip')
                     break
                 }
                 default: return
@@ -124,10 +126,11 @@ class LocationService {
                 sokol.width = PLAYER_SIZE
                 sokol.height = PLAYER_SIZE
                 sokol.classList.add("marker")
+                sokol.classList.add('player')
                 this.marker = new google.maps.marker.AdvancedMarkerElement({
                     map,
                     position: this.location,
-                    title: 'you',
+                    title: 'ti',
                     content: sokol
                 })
             } else if (this.marker) {

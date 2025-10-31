@@ -83,7 +83,7 @@ class MapService {
 
     static createBadge(treasure: Treasure) {
         if (!this.map) return;
-        const asset = AssetService.getAsset("TEST").cloneNode() as HTMLImageElement
+        const asset = AssetService.getAsset(treasure.badge).cloneNode() as HTMLImageElement
         asset.width = ICON_SIZE
         asset.height = ICON_SIZE
         asset.classList.add("marker")

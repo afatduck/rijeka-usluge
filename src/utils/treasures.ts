@@ -21,7 +21,7 @@ export const categoryLocal = (category: Category) => {
         case "START": return "Početna lokacija"
         case "KULTURA": return "Kultura"
         case "KARIJERA": return "Karijera"
-        case "PODRSKA": return "Podrska"
+        case "PODRSKA": return "Podrška"
     }
 }
 

@@ -2,7 +2,7 @@ import { createPopup } from "~/components/popup";
 import { showServiceInfo } from "./createServiceInfo";
 import { isLastTreasure } from "~/utils/treasures";
 
-const TITLE = "Blago pronađeno!"
+const TITLE = "Usluga pronađena!"
 
 const DESC_NORMAL = `
 Čestitamo! Pronašao si novu uslugu! Pogledaj što ona nudi!
@@ -44,6 +44,7 @@ const buildNofifPopup: Factory<NotifyFindFactoryProps> = ({root, close, treasure
     const button = document.createElement('button')
     button.textContent = "Pogledaj uslugu."
     button.style.display = 'block'
+    button.style.marginTop = '2rem';
 
     button.addEventListener('click', () => {close!(); showServiceInfo({treasure})})
     root.append(button)
