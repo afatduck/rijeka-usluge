@@ -1,14 +1,18 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 const Dotenv = require('dotenv-webpack');
 const { server } = require('typescript');
 const { type } = require('os');
+
+const repoName = "rijeka-usluge";
 
 module.exports = {
   entry: './src/index.ts',
   output: {
     filename: 'bundle.[contenthash].js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: `/${repoName}/`,
     clean: true,
   },
   resolve: {
@@ -28,6 +32,11 @@ module.exports = {
       template: './public/index.html',
     }),
     new Dotenv(), // loads .env into process.env.*
+    new CopyPlugin({
+      patterns: [
+        { from: "public", to: ".", globOptions: { ignore: ["**/index.html"] } },
+      ],
+    }),
   ],
   devServer: {
     static: './public',

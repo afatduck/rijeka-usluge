@@ -11,7 +11,7 @@ interface TreasureFactoryProps {
 
 type CancelationToken = string
 
-type Category = "START" | "EDUCATION" | "FUN" | "HOUSING"
+type Category = "START" | "KULTURA" | "KARIJERA" | "PODRSKA"
 
 type Asset = "QUESTION_MARK" | 
 "TEST" | 

@@ -1,5 +1,5 @@
 import { createPopup } from "~/components/popup";
-import { categoryLocal } from "~/utils/treasures";
+import { categoryColor, categoryLocal } from "~/utils/treasures";
 
 const TITLE = "Pomoc"
 
@@ -14,6 +14,7 @@ const buildHintPopup: Factory<TreasureFactoryProps> = ({root, close, treasure}) 
 
     categoryI.textContent = "Kategorija: "
     categoryB.textContent = categoryLocal(treasure.category)
+    categoryB.style.color = categoryColor(treasure.category)
 
     category.append(categoryI)
     category.append(categoryB)

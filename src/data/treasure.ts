@@ -19,7 +19,7 @@ export const treasures: Treasure[] = [
     hint: "Find the building with the big clock tower.",
     next: [3],
     location: { lat: 45.3333, lng: 14.4500 },
-    category: "EDUCATION",
+    category: "KARIJERA",
     badge: "TEST"
   },
   {
@@ -30,7 +30,7 @@ export const treasures: Treasure[] = [
     hint: "Near the entrance gate of the park.",
     next: [4],
     location: { lat: 45.3400, lng: 14.4550 },
-    category: "FUN",
+    category: "KARIJERA",
     badge: "TEST"
   },
   {
@@ -41,7 +41,7 @@ export const treasures: Treasure[] = [
     hint: "Near the playground in the neighborhood.",
     next: [],
     location: { lat: 45.3450, lng: 14.4600 },
-    category: "HOUSING",
+    category: "KARIJERA",
     badge: "TEST"
   },
   // Branch 2
@@ -53,7 +53,7 @@ export const treasures: Treasure[] = [
     hint: "Look for the library with glass facade.",
     next: [6],
     location: { lat: 45.3300, lng: 14.4350 },
-    category: "EDUCATION",
+    category: "KULTURA",
     badge: "TEST"
   },
   {
@@ -64,7 +64,7 @@ export const treasures: Treasure[] = [
     hint: "Check near the water fountain in the city park.",
     next: [7],
     location: { lat: 45.3250, lng: 14.4300 },
-    category: "FUN",
+    category: "KULTURA",
     badge: "TEST"
   },
   {
@@ -75,7 +75,7 @@ export const treasures: Treasure[] = [
     hint: "Look near the corner house with red roof.",
     next: [],
     location: { lat: 45.3200, lng: 14.4250 },
-    category: "HOUSING",
+    category: "KULTURA",
     badge: "TEST"
   },
   // Branch 3
@@ -87,7 +87,7 @@ export const treasures: Treasure[] = [
     hint: "Find the museum with the flag out front.",
     next: [9],
     location: { lat: 45.3305, lng: 14.4400 },
-    category: "EDUCATION",
+    category: "KARIJERA",
     badge: "TEST"
   },
   {
@@ -98,7 +98,7 @@ export const treasures: Treasure[] = [
     hint: "Check around the swings and slides.",
     next: [10],
     location: { lat: 45.3350, lng: 14.4450 },
-    category: "FUN",
+    category: "KARIJERA",
     badge: "TEST"
   },
   {
@@ -109,7 +109,7 @@ export const treasures: Treasure[] = [
     hint: "Near the corner house with a garden.",
     next: [],
     location: { lat: 45.3380, lng: 14.4500 },
-    category: "HOUSING",
+    category: "KARIJERA",
     badge: "TEST"
   },
 ];

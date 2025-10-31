@@ -19,8 +19,17 @@ export const isAbsoluteLast = (state: TreasureSaveData): boolean => {
 export const categoryLocal = (category: Category) => {
     switch (category) {
         case "START": return "Početna lokacija"
-        case "EDUCATION": return "Edukacija"
-        case "FUN": return "Zabava"
-        case "HOUSING": return "Smještaj"
+        case "KULTURA": return "Kultura"
+        case "KARIJERA": return "Karijera"
+        case "PODRSKA": return "Podrska"
+    }
+}
+
+export const categoryColor = (category: Category) => {
+    switch (category) {
+        case "START": return "black"
+        case "KULTURA": return "#f4c434"
+        case "KARIJERA": return "#fe4a49"
+        case "PODRSKA": return "#2ab7ca"
     }
 }
