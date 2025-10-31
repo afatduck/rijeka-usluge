@@ -33,7 +33,7 @@ h1 {
 .ura {
     position: absolute;
     width: 200px;
-    bottom: -4px;
+    bottom: 0px;
     display: none;
     left: 8vw;
 }

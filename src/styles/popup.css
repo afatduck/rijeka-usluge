@@ -8,7 +8,7 @@
     align-items: center;
     align-content: center;
     background-color: #0008;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .popup_bg.popup_fullscreen {
