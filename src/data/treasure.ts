@@ -200,7 +200,11 @@ Sa svake strane ulaznog portala u palaču postavljena je jedna figura Atlanta, m
     title: "Kulturni i festivalni programi za mlade",
     description: "U Rijeci se održava niz obrazovnih, sportskih i kulturnih manifestacija namijenjenih djeci predškolskog i školskog uzrasta, odnosno imaju popratni dječji program, kao i manifestacije u koje se mogu uključiti mladi. Neke od poznatijih takvih događanja su „Student Day Festival“ i „Festival znanosti“.",
     url: "https://www.rijeka.hr/teme-za-gradane/obitelj-i-drustvena-skrb/grad-rijeka-prijatelj-djece/slobodno-vrijeme-djece/manifestacije-za-djecu-i-mlade/ ",
-    hint: "Near the corner house with a garden.",
+    hint: `
+Jedan od najljepših pogleda na grad pruža se upravo s Trsatske gradine. Služila je kao vojna utvrda koju su 1225. podigli Frankopani, a zbog svog položaja bila je i lako branjiva. "Trsat" se prvi put spominje u Vinodolskom zakoniku 1228. god. kao jedan od gradova u vlasti kneza Leonarda Frankopana. Potres 1750. oštećuje utvrdu, nakon čega ostaje napuštena neko vrijeme sve do 1826. kada je kupuje grof Laval Nugent. On je bio austrijski vojskovođa koji je pridonio važnosti utvrde time što ju je obnovio, pretvorio u mauzolej, u njoj izgradio manji hram i donio golemo umjetničko blago koje je skupio tijekom svojih pohoda u Europi. Nakon toga gradina ponovno počinje propadati pa je grad Rijeka ponovno obnavlja 1960. god. Jedan od najljepših pogleda na grad pruža se upravo s Trsatske gradine. Služila je kao vojna utvrda koju su 1225. podigli Frankopani, a zbog svog položaja bila je i lako branjiva. "Trsat" se prvi put spominje u Vinodolskom zakoniku 1228. god. kao jedan od gradova u vlasti kneza Leonarda Frankopana. Potres 1750. oštećuje utvrdu, nakon čega ostaje napuštena neko vrijeme sve do 1826. kada je kupuje grof Laval Nugent. On je bio austrijski vojskovođa koji je pridonio važnosti utvrde time što ju je obnovio, pretvorio u mauzolej, u njoj izgradio manji hram i donio golemo umjetničko blago koje je skupio tijekom svojih pohoda u Europi. Nakon toga gradina ponovno počinje propadati pa je grad Rijeka ponovno obnavlja 1960. god.  
+
+On je bio austrijski vojskovođa koji je pridonio važnosti utvrde time što ju je obnovio, pretvorio u mauzolej, u njoj izgradio manji hram i donio golemo umjetničko blago koje je skupio tijekom svojih pohoda u Europi. Nakon toga gradina ponovno počinje propadati pa je grad Rijeka ponovno obnavlja 1960. godine.  
+    `,
     next: [],
     location: { lat: 45.3324403, lng: 14.4553793 },
     category: "KULTURA",
